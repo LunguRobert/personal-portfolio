@@ -1,0 +1,145 @@
+:root{
+    --primary: #81c2de;
+    --primary-light: #b4f5ff;
+    --primary-dark: #4f92ac;
+
+    --white: #FFFBFA;
+
+    --black: #191308;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+  transition: all .4s ease-out;
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+}
+
+.social-link {
+
+  &--linkedin {
+    cursor: pointer;
+    color: #2d76b0;
+
+  }
+
+  &--github {
+    cursor: pointer;
+    color: #000;
+  }
+
+  &--instagram {
+    cursor: pointer;
+    color: #9a2970;
+  }
+
+  & .social-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    & .social-group {
+
+      &__icon {
+        fill: var(--black);
+        transition: all .2s;
+      }
+
+      &__inner-circle {
+        fill: transparent;
+        transition: all .2s;
+      }
+
+      &__outline {
+        stroke: var(--black);
+        transform-origin: 50% 50%;
+        transition: all .2s;
+      }
+  
+  }
+
+  }
+
+}
+
+.social-link--github {
+
+  &:hover, &:active, &:focus {
+    .social-group {
+      &__icon {
+        fill: var(--white);
+        transition: all .45s;
+      }
+
+      &__inner-circle {
+        fill: #000;
+        transition: all .45s;
+    }
+
+    &__outline {
+      stroke: #000;
+      transform: scale(1.1);
+      transition: all .45s;
+    }
+  }
+}
+
+}
+
+.social-link--linkedin {
+
+  &:hover, &:active, &:focus {
+    .social-group {
+      &__icon {
+        fill: var(--white);
+        transition: all .45s;
+      }
+
+      &__inner-circle {
+        fill: #2d76b0;
+        transition: all .45s;
+    }
+
+    &__outline {
+      stroke: #2d76b0;
+      transform: scale(1.1);
+      transition: all .45s;
+    }
+  }
+}
+
+}
+
+.social-link--instagram {
+
+  &:hover, &:active, &:focus {
+    .social-group {
+      &__icon {
+        fill: var(--white);
+        transition: all .45s;
+      }
+
+      &__inner-circle {
+        fill: #9a2970;
+        transition: all .45s;
+    }
+
+    &--instagram {
+      fill: url(#simpleInsta) !important;
+    }
+
+    &__outline {
+      stroke: #9a2970;
+      transform: scale(1.1);
+      transition: all .45s;
+    }
+  }
+}
+
+}

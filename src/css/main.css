@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+:root {
+  --first: #6E00FF;
+  --second: #6700EE;
+  --third: #00F7FF;
+  --fourth: white;
+  --fifth: #FF64CB;
+  --sixth: black;
+  --customOne: white;
+  --customTwo: white;
+  --customThree: white;
+  --customMenuOne: #7a1bf6c5;
+  --customMenuTwo: #a22b7a9e;
+  --gradientOne: rgba(30,30,30,1);
+  --gradientTwo: rgba(54,54,54,1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0;
+  font-family: "Poppins", aerial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: var(--first);
+}
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 2em 2em 4em;
+}
+header .logo {
+  margin: auto 0;
+  color: var(--third);
+  font-weight: bold;
+}
+header #hamburger {
+  display: block;
+}
+header nav {
+  display: none;
+}
+header .hamburger-nav {
+  background: var(--customMenuOne);
+}
+header .dark-blue {
+  background: var(--customMenuTwo);
+}
+
+.social-header, .hero-design {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background: var(--second);
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.content {
+  position: relative;
+  order: 2;
+  flex: 1;
+  margin-bottom: 20%;
+}
+
+.animation {
+  height: 100%;
+  width: 100%;
+}
+
+.canvas {
+  order: 1;
+  flex: 1;
+}
+
+.meet {
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #FF64CB;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+.scroll #circle {
+  -webkit-animation-name: scroll-up-down;
+          animation-name: scroll-up-down;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.featured .left {
+  justify-content: center;
+  text-align: center;
+  order: 2;
+  z-index: 2;
+  padding: 10px;
+  font-size: calc(0.65em + 1vmin);
+}
+.featured .back-video {
+  padding: 2px;
+  order: 1;
+  position: relative;
+  max-width: 852px;
+  width: 100%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(var(--gradientOne), rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), var(--gradientTwo));
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.featured::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://free4kwallpapers.com/uploads/originals/2020/05/06/epic-star-wars-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(2px);
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6700EE;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.featured-title {
+  color: var(--sixth);
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: var(--sixth);
+  margin-bottom: 3em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills-section {
+  margin: 0;
+  background: var(--fifth);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.skills-section div {
+  margin: auto;
+  word-break: break-word;
+  text-align: start;
+  font-size: calc(0.65em + 1vmin);
+}
+.skills-section div span, .skills-section div h1 {
+  color: #6700EE;
+  font-weight: bold;
+}
+.skills-section div p {
+  color: #ffffff;
+}
+.skills-section div h1 {
+  font-size: 2.5em;
+}
+.skills-section .skills {
+  position: relative;
+  margin: auto;
+}
+.skills-section .skills span {
+  font-size: calc(0.75em + 1vmin);
+  color: #E3E8EA;
+}
+
+.portfolio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--sixth);
+  overflow: none;
+  background: var(--customThree);
+}
+.portfolio .portfolio-description {
+  word-break: break-word;
+  font-size: 2em;
+}
+.portfolio p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+  margin: 0;
+}
+.portfolio .section-fluid-main {
+  position: relative;
+  height: 100%;
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+  padding: 50px 0;
+}
+.portfolio .section-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .section-row:hover .section-col {
+  opacity: 0.1;
+}
+.portfolio .section-col {
+  position: relative;
+  width: 100%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  transition: opacity 250ms linear;
+}
+.portfolio .section-col .section {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px;
+}
+.portfolio .section-row .section-col:hover {
+  opacity: 1;
+}
+.portfolio .section-in {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.portfolio .section-in img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 250ms linear;
+}
+.portfolio .section-col:hover .section-in img {
+  transform: scale(1.1) rotate(-3deg);
+}
+.portfolio .hover-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+  display: inline-flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  align-self: center;
+  mix-blend-mode: difference;
+}
+.portfolio .hover-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 8vw;
+  line-height: 1;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 250ms linear, opacity 250ms ease;
+}
+.portfolio .section-col:hover + .hover-text h2 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contact {
+  background: var(--second);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured {
+    text-align: left;
+  }
+  .featured {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    order: 1;
+  }
+  .back-video {
+    order: 2;
+  }
+  right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .hero {
+    position: relative;
+    height: 90vh;
+  }
+  .hero .canvas {
+    order: 1;
+  }
+  .hero .content {
+    order: 2;
+  }
+  header .menu {
+    display: none;
+  }
+  header nav {
+    display: block;
+    margin: auto 0;
+    float: right;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul a {
+    display: block;
+    padding: 0 1em;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .hero {
+    position: relative;
+    height: 90vh;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: var(--second);
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  header .menu {
+    display: none;
+  }
+  .featured {
+    flex-direction: row;
+    align-items: center;
+  }
+  .featured .left {
+    order: 1;
+    width: 50%;
+  }
+  .featured .back-video {
+    width: 50%;
+    order: 2;
+  }
+  .social-header {
+    padding: 2em 2em 2em 2em;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    background: var(--customOne);
+    display: block;
+  }
+  .social-header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 24px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .content {
+    background: var(--first);
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+    order: 1 !important;
+    margin-bottom: 0;
+  }
+  .canvas {
+    order: 2 !important;
+  }
+  .meet {
+    width: 500px;
+    margin: 0 0;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    max-width: 500px;
+  }
+  .animation {
+    display: contents;
+  }
+  .canvas {
+    background: var(--customTwo);
+    height: 100%;
+    width: 100%;
+  }
+  .skills-section {
+    flex-direction: row;
+  }
+  .skills-section div {
+    width: 50%;
+  }
+  .skills-section .skills span {
+    font-size: xx-large;
+  }
+  .contact {
+    flex-direction: row;
+  }
+}
+@-webkit-keyframes scroll-up-down {
+  0% {
+    transform: translate(7.6px, 9px);
+  }
+  50% {
+    transform: translate(7.6px, 42px);
+  }
+  100% {
+    transform: translate(7.6px, 9px);
+  }
+}
+@keyframes scroll-up-down {
+  0% {
+    transform: translate(7.6px, 9px);
+  }
+  50% {
+    transform: translate(7.6px, 42px);
+  }
+  100% {
+    transform: translate(7.6px, 9px);
+  }
+}/*# sourceMappingURL=main.css.map */

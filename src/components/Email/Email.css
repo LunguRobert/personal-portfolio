@@ -1,0 +1,100 @@
+.contact-form {
+  width: 100%;
+  margin: auto 0;
+}
+.contact-form ul {
+  padding: 0 20px;
+  margin: 0;
+}
+.contact-form ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+  outline: none;
+}
+.contact-form ul li.half {
+  width: 49%;
+  margin-left: 2%;
+  float: left;
+  clear: none;
+}
+.contact-form ul li.half:first-child {
+  margin-left: 0;
+}
+.contact-form input[type=text],
+.contact-form input[type=email] {
+  width: 100%;
+  border: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 150px;
+  outline: none;
+}
+.contact-form input[type=email], .contact-form textarea {
+  border-bottom: 2px solid red;
+}
+.contact-form .flat-button {
+  color: #ffd700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffd700;
+  float: left;
+  border-radius: 4px;
+  background: 0 0;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type=text]:active, input[type=text]:focus, input[type=text]:hover, input[type=text]:visited {
+  border-bottom: 2px solid #ffd700;
+}
+
+.contact-me, .contact-me-text {
+  margin-left: 20px;
+  text-align: start;
+  color: white;
+  width: 90%;
+}
+
+.contact-me {
+  font-size: 2.5em;
+}
+
+.contact-me-text {
+  font-size: calc(0.65em + 1vmin);
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1050px) {
+  .contact-form {
+    width: 50%;
+  }
+  .contact-form .contact-me {
+    font-size: 3em;
+  }
+}/*# sourceMappingURL=Email.css.map */
