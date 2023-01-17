@@ -1,21 +1,18 @@
 .map-wrap {
-    float: none;
-    margin: 0;
-    width: 100%;
-    height: 400px;
-  }
+  float: none;
+  margin: 0;
+  width: 100%;
+  height: 400px;
+}
 
 .leaflet-container {
-    width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 1050px) {
+  .map-wrap {
+    width: 50%;
     height: 100%;
   }
-
-  @media only screen and (min-width:1050px){
-
-    .map-wrap{
-        width: 50%;
-        height: 100%;
-    }
-
-
-  }
+}

@@ -32,27 +32,27 @@ header .box span + span {
 }
 header .box .active span:nth-child(1) {
   -webkit-animation: ease 0.7s top forwards;
-          animation: ease 0.7s top forwards;
+  animation: ease 0.7s top forwards;
 }
 header .box .no span:nth-child(1) {
   -webkit-animation: ease 0.7s top-2 forwards;
-          animation: ease 0.7s top-2 forwards;
+  animation: ease 0.7s top-2 forwards;
 }
 header .box .active span:nth-child(2) {
   -webkit-animation: ease 0.7s scaled forwards;
-          animation: ease 0.7s scaled forwards;
+  animation: ease 0.7s scaled forwards;
 }
 header .box .no span:nth-child(2) {
   -webkit-animation: ease 0.7s scaled-2 forwards;
-          animation: ease 0.7s scaled-2 forwards;
+  animation: ease 0.7s scaled-2 forwards;
 }
 header .box .active span:nth-child(3) {
   -webkit-animation: ease 0.7s bottom forwards;
-          animation: ease 0.7s bottom forwards;
+  animation: ease 0.7s bottom forwards;
 }
 header .box .no span:nth-child(3) {
   -webkit-animation: ease 0.7s bottom-2 forwards;
-          animation: ease 0.7s bottom-2 forwards;
+  animation: ease 0.7s bottom-2 forwards;
 }
 @-webkit-keyframes top {
   0% {
@@ -227,8 +227,9 @@ header .box .no span:nth-child(3) {
   list-style: none;
   font-weight: bolder;
   font-size: 24px;
-  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac, -1px -1px 0 #c6c23f;
-  color: #00F7FF;
+  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
+    -1px -1px 0 #c6c23f;
+  color: #00f7ff;
   line-height: 2.2;
   text-transform: uppercase;
   letter-spacing: 1.7px;
@@ -283,4 +284,4 @@ header .box .no span:nth-child(3) {
     transform: translateY(0%);
     opacity: 1;
   }
-}/*# sourceMappingURL=Menu.css.map */
+} /*# sourceMappingURL=Menu.css.map */

@@ -2,7 +2,7 @@
   --primary: #81c2de;
   --primary-light: #b4f5ff;
   --primary-dark: #4f92ac;
-  --white: #FFFBFA;
+  --white: #fffbfa;
   --black: #191308;
 }
 
@@ -50,47 +50,67 @@
   transition: all 0.2s;
 }
 
-.social-link--github:hover .social-group__icon, .social-link--github:active .social-group__icon, .social-link--github:focus .social-group__icon {
+.social-link--github:hover .social-group__icon,
+.social-link--github:active .social-group__icon,
+.social-link--github:focus .social-group__icon {
   fill: var(--white);
   transition: all 0.45s;
 }
-.social-link--github:hover .social-group__inner-circle, .social-link--github:active .social-group__inner-circle, .social-link--github:focus .social-group__inner-circle {
+.social-link--github:hover .social-group__inner-circle,
+.social-link--github:active .social-group__inner-circle,
+.social-link--github:focus .social-group__inner-circle {
   fill: #000;
   transition: all 0.45s;
 }
-.social-link--github:hover .social-group__outline, .social-link--github:active .social-group__outline, .social-link--github:focus .social-group__outline {
+.social-link--github:hover .social-group__outline,
+.social-link--github:active .social-group__outline,
+.social-link--github:focus .social-group__outline {
   stroke: #000;
   transform: scale(1.1);
   transition: all 0.45s;
 }
 
-.social-link--linkedin:hover .social-group__icon, .social-link--linkedin:active .social-group__icon, .social-link--linkedin:focus .social-group__icon {
+.social-link--linkedin:hover .social-group__icon,
+.social-link--linkedin:active .social-group__icon,
+.social-link--linkedin:focus .social-group__icon {
   fill: var(--white);
   transition: all 0.45s;
 }
-.social-link--linkedin:hover .social-group__inner-circle, .social-link--linkedin:active .social-group__inner-circle, .social-link--linkedin:focus .social-group__inner-circle {
+.social-link--linkedin:hover .social-group__inner-circle,
+.social-link--linkedin:active .social-group__inner-circle,
+.social-link--linkedin:focus .social-group__inner-circle {
   fill: #2d76b0;
   transition: all 0.45s;
 }
-.social-link--linkedin:hover .social-group__outline, .social-link--linkedin:active .social-group__outline, .social-link--linkedin:focus .social-group__outline {
+.social-link--linkedin:hover .social-group__outline,
+.social-link--linkedin:active .social-group__outline,
+.social-link--linkedin:focus .social-group__outline {
   stroke: #2d76b0;
   transform: scale(1.1);
   transition: all 0.45s;
 }
 
-.social-link--instagram:hover .social-group__icon, .social-link--instagram:active .social-group__icon, .social-link--instagram:focus .social-group__icon {
+.social-link--instagram:hover .social-group__icon,
+.social-link--instagram:active .social-group__icon,
+.social-link--instagram:focus .social-group__icon {
   fill: var(--white);
   transition: all 0.45s;
 }
-.social-link--instagram:hover .social-group__inner-circle, .social-link--instagram:active .social-group__inner-circle, .social-link--instagram:focus .social-group__inner-circle {
+.social-link--instagram:hover .social-group__inner-circle,
+.social-link--instagram:active .social-group__inner-circle,
+.social-link--instagram:focus .social-group__inner-circle {
   fill: #9a2970;
   transition: all 0.45s;
 }
-.social-link--instagram:hover .social-group--instagram, .social-link--instagram:active .social-group--instagram, .social-link--instagram:focus .social-group--instagram {
+.social-link--instagram:hover .social-group--instagram,
+.social-link--instagram:active .social-group--instagram,
+.social-link--instagram:focus .social-group--instagram {
   fill: url(#simpleInsta) !important;
 }
-.social-link--instagram:hover .social-group__outline, .social-link--instagram:active .social-group__outline, .social-link--instagram:focus .social-group__outline {
+.social-link--instagram:hover .social-group__outline,
+.social-link--instagram:active .social-group__outline,
+.social-link--instagram:focus .social-group__outline {
   stroke: #9a2970;
   transform: scale(1.1);
   transition: all 0.45s;
-}/*# sourceMappingURL=Contacts.css.map */
+} /*# sourceMappingURL=Contacts.css.map */

@@ -26,8 +26,8 @@
 .contact-form ul li.half:first-child {
   margin-left: 0;
 }
-.contact-form input[type=text],
-.contact-form input[type=email] {
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
   width: 100%;
   border: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -50,7 +50,8 @@
   min-height: 150px;
   outline: none;
 }
-.contact-form input[type=email], .contact-form textarea {
+.contact-form input[type="email"],
+.contact-form textarea {
   border-bottom: 2px solid red;
 }
 .contact-form .flat-button {
@@ -70,11 +71,15 @@
   cursor: pointer;
 }
 
-input[type=text]:active, input[type=text]:focus, input[type=text]:hover, input[type=text]:visited {
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="text"]:visited {
   border-bottom: 2px solid #ffd700;
 }
 
-.contact-me, .contact-me-text {
+.contact-me,
+.contact-me-text {
   margin-left: 20px;
   text-align: start;
   color: white;
@@ -97,4 +102,4 @@ input[type=text]:active, input[type=text]:focus, input[type=text]:hover, input[t
   .contact-form .contact-me {
     font-size: 3em;
   }
-}/*# sourceMappingURL=Email.css.map */
+} /*# sourceMappingURL=Email.css.map */

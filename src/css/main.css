@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 :root {
-  --first: #6E00FF;
-  --second: #6700EE;
-  --third: #00F7FF;
+  --first: #6e00ff;
+  --second: #6700ee;
+  --third: #00f7ff;
   --fourth: white;
-  --fifth: #FF64CB;
+  --fifth: #ff64cb;
   --sixth: black;
   --customOne: white;
   --customTwo: white;
   --customThree: white;
   --customMenuOne: #7a1bf6c5;
   --customMenuTwo: #a22b7a9e;
-  --gradientOne: rgba(30,30,30,1);
-  --gradientTwo: rgba(54,54,54,1);
+  --gradientOne: rgba(30, 30, 30, 1);
+  --gradientTwo: rgba(54, 54, 54, 1);
 }
 
 *,
@@ -70,7 +70,8 @@ header .dark-blue {
   background: var(--customMenuTwo);
 }
 
-.social-header, .hero-design {
+.social-header,
+.hero-design {
   display: none;
 }
 
@@ -105,7 +106,7 @@ header .dark-blue {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: #FF64CB;
+  color: #ff64cb;
 }
 
 .scroll {
@@ -114,13 +115,13 @@ header .dark-blue {
 }
 .scroll #circle {
   -webkit-animation-name: scroll-up-down;
-          animation-name: scroll-up-down;
+  animation-name: scroll-up-down;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 section {
@@ -151,7 +152,9 @@ section {
   max-width: 852px;
   width: 100%;
   margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .featured::before {
@@ -159,7 +162,8 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(var(--gradientOne), rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), var(--gradientTwo));
+  background-image: linear-gradient(var(--gradientOne), rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), var(--gradientTwo));
   top: 0;
   left: 0;
   z-index: 0;
@@ -183,7 +187,7 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6700EE;
+  color: #6700ee;
   letter-spacing: 0.2em;
   font-size: 0.85em;
 }
@@ -217,8 +221,9 @@ section {
   text-align: start;
   font-size: calc(0.65em + 1vmin);
 }
-.skills-section div span, .skills-section div h1 {
-  color: #6700EE;
+.skills-section div span,
+.skills-section div h1 {
+  color: #6700ee;
   font-weight: bold;
 }
 .skills-section div p {
@@ -233,7 +238,7 @@ section {
 }
 .skills-section .skills span {
   font-size: calc(0.75em + 1vmin);
-  color: #E3E8EA;
+  color: #e3e8ea;
 }
 
 .portfolio {
@@ -525,4 +530,4 @@ section {
   100% {
     transform: translate(7.6px, 9px);
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
