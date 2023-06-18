@@ -83,7 +83,7 @@ export default function Scene({ setBg }) {
             metalness={0.1}
           />
         </a.mesh>
-        <Environment preset="warehouse" />
+        {/* <Environment preset="warehouse" /> */}
       </Suspense>
     </>
   );

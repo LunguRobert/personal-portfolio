@@ -265,62 +265,62 @@ function App() {
           <span className="subtitle">Most recent work</span>
         </div>
 
-        <div class="section-fluid-main">
-          <div class="section-row">
-            <div class="section-col">
-              <div class="section">
+        <div className="section-fluid-main">
+          <div className="section-row">
+            <div className="section-col">
+              <div className="section">
                 <a
                   href="https://star-wars-supremacy.onrender.com"
-                  class="section-in"
+                  className="section-in"
                   target="_blank"
                 >
                   <img src="https://i.imgur.com/tZ0pEQp.jpg" alt="" />
                 </a>
               </div>
             </div>
-            <div class="hover-text">
+            <div className="hover-text">
               <h2>Star Wars Supremacy</h2>
             </div>
-            <div class="section-col">
-              <div class="section">
+            <div className="section-col">
+              <div className="section">
                 <a
                   href="https://nike-react-app.onrender.com/"
-                  class="section-in"
+                  className="section-in"
                   target="_blank"
                 >
                   <img src="https://i.imgur.com/7Rwdrfb.jpg" alt="" />
                 </a>
               </div>
             </div>
-            <div class="hover-text">
+            <div className="hover-text">
               <h2>Nike React E-commerce</h2>
             </div>
-            <div class="section-col">
-              <div class="section">
+            <div className="section-col">
+              <div className="section">
                 <a
                   href="https://breaking-news.onrender.com"
-                  class="section-in"
+                  className="section-in"
                   target="_blank"
                 >
                   <img src="https://i.imgur.com/SKGfJHt.jpg" alt="" />
                 </a>
               </div>
             </div>
-            <div class="hover-text">
+            <div className="hover-text">
               <h2>Breaking news App</h2>
             </div>
-            <div class="section-col">
-              <div class="section">
+            <div className="section-col">
+              <div className="section">
                 <a
                   href="https://form-validation-idpy.onrender.com/"
-                  class="section-in"
+                  className="section-in"
                   target="_blank"
                 >
                   <img src="https://i.imgur.com/SfscdTb.jpg" alt="" />
                 </a>
               </div>
             </div>
-            <div class="hover-text">
+            <div className="hover-text">
               <h2>Simple Form Validation</h2>
             </div>
           </div>
